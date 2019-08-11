@@ -5,8 +5,6 @@ import java.util.Arrays;
 public class Codility4 {
     public int solution(int[] A) {
         Arrays.sort(A);
-
-
         if (A[A.length-1] == A.length && Arrays.stream(A).sum() == intArraySum(A.length)) return 1;
         else return 0;
     }

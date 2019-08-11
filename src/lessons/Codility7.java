@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Codility7 {
     public int solution(String S) {
-
+        //Stack 기능으로 괄호가 맞는지를 판단.
         Stack charStack = new Stack<>();
         char lastChar;
         for (char input : S.toCharArray()) {

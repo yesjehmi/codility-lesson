@@ -4,11 +4,10 @@ import java.util.Arrays;
 
 public class Codility2 {
     public int solution(int[] A) {
-        /*
+        if (A.length ==1) return A[0];
         Arrays.sort(A);
 
         int cnt = 0;
-        if (A.length ==1) return A[0];
 
         while (cnt < A.length-1) {
             if (A[cnt] != A[cnt+1])
@@ -18,14 +17,17 @@ public class Codility2 {
         }
 
         return A[A.length-1];
-         */
+    }
+
+        /*
         int elem = 0;
 
         for (int i = 0; i < A.length; i++) {
-            elem ^= A[i];
+            //elem ^= A[i];
+
+            elem = elem ^ A[i];
         }
-        return elem;
-    }
+        return elem;*/
 }
 //9,3,9,3,9,7,9
 //3,3,7,9,9,9,9
